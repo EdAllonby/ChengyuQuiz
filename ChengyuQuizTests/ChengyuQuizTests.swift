@@ -1,10 +1,3 @@
-//
-//  ChengyuQuizTests.swift
-//  ChengyuQuizTests
-//
-//  Created by Ed Allonby on 23/05/2022.
-//
-
 @testable import ChengyuQuiz
 import XCTest
 

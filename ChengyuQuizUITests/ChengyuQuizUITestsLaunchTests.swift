@@ -1,10 +1,3 @@
-//
-//  ChengyuQuizUITestsLaunchTests.swift
-//  ChengyuQuizUITests
-//
-//  Created by Ed Allonby on 23/05/2022.
-//
-
 import XCTest
 
 class ChengyuQuizUITestsLaunchTests: XCTestCase {
