@@ -1,15 +1,17 @@
 import SwiftUI
 
 struct QuizView: View {
+    @StateObject private var viewModel = QuizViewModel()
+
     var body: some View {
         DiamondGrid {
-            QuizButton(character: ChineseCharacter(pinyin: "qi", hanzi: "七"))
+            QuizButton(character: viewModel.chengyu.characterList[0])
         } two: {
-            QuizButton(character: ChineseCharacter(pinyin: "shang", hanzi: "上"))
+            QuizButton(character: viewModel.chengyu.characterList[1])
         } three: {
-            QuizButton(character: ChineseCharacter(pinyin: "ba", hanzi: "八"))
+            QuizButton(character: viewModel.chengyu.characterList[2])
         } four: {
-            QuizButton(character: ChineseCharacter(pinyin: "xia", hanzi: "下"))
+            QuizButton(character: viewModel.chengyu.characterList[3])
         }
     }
 }
