@@ -1,17 +1,17 @@
 import SwiftUI
 
 struct QuizButton: View {
-    private let hanzi: String
+    private let character: ChineseCharacter
 
-    init(hanzi: String) {
-        self.hanzi = hanzi
+    init(character: ChineseCharacter) {
+        self.character = character
     }
 
     var body: some View {
         Button {
             print("button pressed")
         } label: {
-            Text(hanzi)
+            Text(character.hanzi)
                 .font(.title)
                 .bold()
                 .padding()
@@ -25,6 +25,6 @@ struct QuizButton: View {
 
 struct QuizButton_Previews: PreviewProvider {
     static var previews: some View {
-        QuizButton(hanzi: "你")
+        QuizButton(character: ChineseCharacter(pinyin: "ni", hanzi: "你"))
     }
 }

@@ -3,13 +3,13 @@ import SwiftUI
 struct QuizView: View {
     var body: some View {
         DiamondGrid {
-            QuizButton(hanzi: "七")
+            QuizButton(character: ChineseCharacter(pinyin: "qi", hanzi: "七"))
         } two: {
-            QuizButton(hanzi: "上")
+            QuizButton(character: ChineseCharacter(pinyin: "shang", hanzi: "上"))
         } three: {
-            QuizButton(hanzi: "八")
+            QuizButton(character: ChineseCharacter(pinyin: "ba", hanzi: "八"))
         } four: {
-            QuizButton(hanzi: "下")
+            QuizButton(character: ChineseCharacter(pinyin: "xia", hanzi: "下"))
         }
     }
 }
